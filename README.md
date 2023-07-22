@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # Myportfolio
-This is my website geenadi
+This is my website 
 =======
 
 <div id="top"></div>
@@ -29,7 +29,7 @@ This is my website geenadi
 
 ## About Project
 
-<img src="assets/home.png" alt="Logo" width="190" height="190" >
+<img src="assets/home.png" alt="Logo" >
 
 <b>Hello, I'm Pevinya Geenadi! This project is my personal portfolio website where I showcase my projects, skills, and experiences in the world of web development.</b>
 
