@@ -1,5 +1,3 @@
-# Myportfolio
-This is my website geenu
 
 <div id="top"></div>
 
@@ -27,7 +25,7 @@ This is my website geenu
 
 ## About Project
 
-<img src="assets/home.png" alt="Logo" >
+<img src="assets/home.png" alt="Logo" width="190" height="190" >
 
 <b>Hello, I'm Pevinya Geenadi! This project is my personal portfolio website where I showcase my projects, skills, and experiences in the world of web development.</b>
 
@@ -65,6 +63,6 @@ Feel free to reach out for collaboration or just to say hi! 📫
 
 <div align="center">
   :heart_eyes: Thanks for visiting my portfolio! Let's create something amazing together! :rocket: <br/>
-  &copy; 2021 Pevinya Geenadi
+  &copy; 2023 Pevinya Geenadi
 </div>
 
