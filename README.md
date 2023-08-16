@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Myportfolio
 This is my website 
 =======
@@ -70,4 +70,3 @@ Feel free to reach out for collaboration or just to say hi! 📫
   &copy; 2023 Pevinya Geenadi
 </div>
 
->>>>>>> 1db02355090bf4eb0b8d0f822fdc3dcab36676cf

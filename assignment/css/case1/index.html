@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+
+    <style>
+        .red-box{
+            position: absolute;
+            border: 2px solid;
+            width: 50%;
+            height: 50%;
+            background: rgb(255, 0, 0);
+            left: 0%;
+            top: 0%;
+            border-radius: 0px 0px 0px 0px;
+            border-color: red;
+        }
+
+        .green-box{
+            position: absolute;
+            border: 2px solid;
+            width: 50%;
+            height: 50%;
+            right: 0%;
+            background: rgb(72, 255, 0);
+            right: 0%;
+            top: 0%;
+            border-color: rgb(72, 255, 0);
+        }
+
+        .yellow-box{
+            position: absolute;
+            border: 2px solid;
+            width: 50%;
+            height: 50%;
+            left: 0%;
+            bottom: 0%;
+            background: rgb(217, 255, 0);
+            border-color: rgb(217, 255, 0);
+        }
+
+        .pink-box{
+            position: absolute;
+            border: 2px solid;
+            width: 50%;
+            height: 50%;
+            right: 0%;
+            bottom: 0%;
+            background: rgb(255, 0, 242);
+            border-color: rgb(255, 0, 242);
+        }
+
+        .circle-box{
+            position: absolute;
+            border: 2px solid;
+            width: 20%;
+            height: 40%;
+            right: 0%;
+            left: 0%;
+            top: 0%;
+            bottom: 0%;
+            margin: auto;
+            border-radius: 100%;
+            background: rgb(253, 253, 253);
+            border-color: white;
+        }
+
+        .circle-child-box{
+            position: absolute;
+            border: 2px solid;
+            width: 50%;
+            height: 50%;
+            right: 0%;
+            left: 0%;
+            top: 0%;
+            bottom: 0%;
+            margin: auto;
+            background: rgb(236, 0, 0);
+            border-color: red;
+        }
+
+        .main-box{
+            position: absolute;
+            border: 2px solid;
+            width: 8%;
+            height: 15%;
+            right: 0%;
+            left: 0%;
+            top: 0%;
+            bottom: 0%;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            border-color: white;
+        }
+
+        .main-circle-box{
+            position: absolute;
+            border: 2px solid;
+            width: 50%;
+            height: 50%;
+            right: 0%;
+            left: 0%;
+            top: 0%;
+            bottom: 0%;
+            border-radius: 100%;
+            margin: auto;
+            background: rgb(236, 0, 0);
+            border-color: red;
+        }
+
+        .radius-box-one{
+            position: absolute;
+            border: 2px solid;
+            width: 8%;
+            height: 15%;
+            left: -30px;
+            top: -20px;
+            border-bottom-right-radius: 80%;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            border-color: white;
+        }
+
+        .radius-box-two{
+            position: absolute;
+            border: 2px solid;
+            width: 8%;
+            height: 15%;
+            right: -30px;
+            top: -20px;
+            border-bottom-left-radius: 80%;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            border-color: white;
+        }
+
+        .radius-box-three{
+            position: absolute;
+            border: 2px solid;
+            width: 8%;
+            height: 15%;
+            right: -30px;
+            bottom: -20px;
+            border-top-left-radius: 80%;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            border-color: white;
+        }
+
+        .radius-box-four{
+            position: absolute;
+            border: 2px solid;
+            width: 8%;
+            height: 15%;
+            left: -30px;
+            bottom: -20px;
+            border-top-right-radius: 80%;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            border-color: white;
+        }
+
+        .circle-box-five{
+            position: absolute;
+            border: 2px solid;
+            width: 8%;
+            height: 15%;
+            right: 0%;
+            left: 0%;
+            bottom: -50px;
+            margin: auto;
+            border-top-left-radius: 60%;
+            border-top-right-radius: 60%;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            border-color: white;
+        }
+
+        .circle-box-six{
+            position: absolute;
+            border: 2px solid;
+            width: 8%;
+            height: 15%;
+            right: 0%;
+            left: 0%;
+            top: -50px;
+            margin: auto;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 60%;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            border-color: white;
+        }
+
+    </style>
+    <link rel="stylesheet" href="normalize.css_8.0.1_normalize.css">
+</head>
+<body>
+
+<section>
+    <section class="red-box">
+        <div class="circle-box">
+            <div class="circle-child-box"></div>
+        </div>
+    </section>
+    <section class="green-box">
+        <div class="circle-box">
+            <div class="circle-child-box"></div>
+        </div>
+    </section>
+    <section class="yellow-box">
+        <div class="circle-box">
+            <div class="circle-child-box"></div>
+        </div>
+    </section>
+    <section class="pink-box">
+        <div class="circle-box">
+            <div class="circle-child-box"></div>
+        </div>
+    </section>
+
+    <div class="main-box">
+        <div class="main-circle-box"></div>
+    </div>
+    <div class="radius-box-one"></div>
+    <div class="radius-box-two"></div>
+    <div class="radius-box-three"></div>
+    <div class="radius-box-four"></div>
+    <div class="circle-box-five"></div>
+    <div class="circle-box-six"></div>
+</section>
+
+</body>
+</html>
