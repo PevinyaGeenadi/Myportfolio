@@ -2,9 +2,227 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 2</title>
+    <title>case 2 Assignment </title>
+    <link rel="stylesheet" href="normalize.css_8.0.1_normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header{
+            background: white;
+            box-shadow: 0px -1px 8px 2px #1c1717e8;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: 73px;
+            z-index: 2;
+        }
+        header>img{
+            width: 190px;
+            position: relative;
+            top: 20px;
+            left: 10px;
+
+        }
+
+        header > nav {
+            position: absolute;
+            right: 40px;
+            top: 0;
+        }
+
+        header>nav>ul>li{
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+            color: rgba(46, 41, 41, 0.96);
+            font-size: 19px;
+            border-right: 2px solid rgba(46, 41, 41, 0.58);
+        }
+        header > nav > ul > li:first-child{
+            border-left: 2px solid rgba(46, 41, 41, 0.58);
+        }
+
+        main ul>li:hover a{
+            color: #eee309;
+        }
+
+        main ul>li:hover i{
+            color: #ff9500;
+        }
+
+        header ul>li:hover a{
+            color: rgba(228, 12, 12, 0.89);
+        }
+
+        header ul>li:hover i{
+            color: #c21e1e;
+        }
+
+        body>main{
+            position: relative;
+            margin-top: 73px;
+        }
+        main>nav{
+            position: absolute;
+            background: #44247f;
+            top: 0;
+            bottom: 0;
+            width: 260px;
+        }
+        main > nav > ul > li {
+            color: white;
+            list-style: none;
+            padding-top: 40px;
+            font-size: 19px;
+            cursor: pointer;
+
+        }
+
+        header ul>li>i{
+            padding-right: 6px;
+        }
+        header ul>li>a{
+            color: rgba(46, 41, 41, 0.96);
+            text-decoration: none;
+        }
+
+        main ul>li>i{
+            padding-right: 15px;
+            font-size: 20px;
+            color: #ccffcd;
+        }
+        main ul>li>a{
+            color: #ccffcd;
+            text-decoration: none;
+        }
+
+        main>section{
+            margin-left: 250px;
+            padding: 30px;
+        }
+        main > section p {
+            color: #433636f5;
+        }
+
+        main > section > section:first-child {
+            height: 300px;
+            position: relative;
+        }
+
+        main>section>section:first-child>div{
+            height: 100%;
+            width: calc(100% / 3);
+            position: absolute;
+            border: 1px solid rgba(0, 0, 0, 0.97);
+        }
+
+        main>section>section>div:nth-child(1){
+            left: 0;
+            background: url("gifff.gif");
+
+        }
+
+        main>section>section>div:nth-child(2){
+            left:calc(100% /3);
+            background: url("gifff.gif") ;
+
+        }
+
+        main>section>section>div:nth-child(3){
+            right: 0;
+            background: url("gifff.gif");
+
+        }
+
+
+        footer {
+            height: 60px;
+            background: #363030;
+        }
+
+        footer > h4 {
+            text-align: center;
+            margin-top: 0;
+            padding-top: 20px;
+            color: #e5e5e5;
+        }
+
+
+        </style>
+
 </head>
 <body>
+ <header>
 
+    <img src="ijse.png" height="50" width="135"/>
+
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+            <li><i class="fa-solid fa-earth-africa"></i><a href="#">Service</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="#">Contacts</a></li>
+            <li><i class="fa-solid fa-file-invoice"></i><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+</header>
+ <main>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+            <li><i class="fa-solid fa-earth-africa"></i><a href="#">Service</a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="#">Contact</a></li>
+            <li><i class="fa-solid fa-file-invoice"></i><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium debitis, eligendi expedita fugiat
+                harum hic, inventore odit pariatur praesentium, quasi quo temporibus vitae! Architecto est nam nulla
+                perferendis recusandae.</p>
+            <p>Architecto, nam nisi. Dolor dolorem earum eos fugiat illum nostrum obcaecati perferendis quae quas quo, quod
+                reprehenderit sed suscipit totam ullam velit vitae. Esse eveniet mollitia nemo qui. Ex, inventore.</p>
+            <p>Accusantium adipisci aliquam architecto asperiores atque blanditiis commodi consequuntur dignissimos
+                doloremque dolorum esse est hic libero minus nemo neque odio officiis, quaerat quidem quisquam rem repellat
+                rerum sapiente sint veniam?</p>
+            <p>Assumenda aut blanditiis, deserunt eveniet hic ipsa labore mollitia nam pariatur perferendis placeat quo sit
+                vero? Ad aliquam cupiditate hic maiores nemo numquam reiciendis tenetur? Eaque enim et rem soluta?</p>
+            <p>A at delectus doloribus eius, error illum, in ipsum labore laborum molestiae officiis porro, quaerat qui quis
+                quos reprehenderit ullam. Accusantium atque deserunt distinctio minima optio quibusdam recusandae sed
+                vitae?</p>
+            <p>Assumenda cupiditate eaque esse eveniet, expedita nesciunt sequi? Architecto delectus exercitationem id ipsum
+                laudantium, natus necessitatibus nobis quasi reprehenderit sequi. Beatae doloribus est facilis, illum
+                impedit iste nulla soluta ullam?</p>
+            <p>Ab accusamus accusantium alias commodi, deleniti deserunt dignissimos doloremque eum facere fugiat minus nemo
+                nihil nulla numquam odit officia perferendis possimus, quas, qui quidem sequi sint sit tempora veniam
+                voluptatem.</p>
+            <p>A ad alias architecto, autem consectetur corporis cum dolores, ducimus eaque explicabo facilis fugiat harum
+                ipsam magni modi necessitatibus nesciunt, non placeat quisquam rem repudiandae similique soluta voluptate.
+                Ipsa, similique.</p>
+            <p>A ad alias architecto, autem consectetur corporis cum dolores, ducimus eaque explicabo facilis fugiat harum
+                ipsam magni modi necessitatibus nesciunt, non placeat quisquam rem repudiandae similique soluta voluptate.
+                Ipsa, similique.</p>
+
+        </section>
+
+    </section>
+</main>
+ <footer>
+    <h4>Developed By IJSE</h4>
+</footer>
 </body>
 </html>
