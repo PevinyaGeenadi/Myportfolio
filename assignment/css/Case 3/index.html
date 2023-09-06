@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="normalize.css_8.0.1_normalize.css">
 
     <style>
+        /* Style for the outermost section, which covers the entire viewport */
         section{
             width: 100vw;
             height: 100vh;
             position: relative;
         }
+
+        /* Style for the first circle element */
         section>section:first-child>div:first-child{
             width: 300px;
             height: 300px;
@@ -25,6 +28,8 @@
             margin: auto; /* Center the circle precisely */
             z-index: 1;
         }
+
+        /* Style for the second circle element */
         section>section:first-child>div:nth-child(2){
             width: 270px;
             height: 270px;
@@ -38,6 +43,8 @@
             margin: auto;/* Center the circle precisely */
             z-index: 2;
         }
+
+        /* Style for the third circle element with a background color */
         section>section:first-child>div:nth-child(3){
             width: 270px;
             height: 270px;
@@ -51,6 +58,8 @@
             margin: auto; /* Center the circle precisely */
             z-index: 3;
         }
+
+        /* Style for the white text in the circles */
         h1{
             color: white;
             position: absolute;
@@ -61,6 +70,8 @@
             margin: auto;
             text-align: center;
         }
+
+        /* Style for the fourth circle element with a blue background */
         section>section:nth-child(2)>div{
             width: 270px;
             height: 270px;
@@ -74,6 +85,8 @@
             margin: auto;
             z-index: 4;
         }
+
+        /* Style for the fifth circle element with a red background */
         section>section:nth-child(3)>div{
             width: 270px;
             height: 270px;
@@ -87,6 +100,8 @@
             margin: auto;
             z-index: 5;
         }
+
+        /* Adjust the position of the last text block within the red circle */
         section>section:last-child>div>h1{
             top: 72px;
         }
