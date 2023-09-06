@@ -6,16 +6,21 @@
     <title>Case 4</title>
     <link rel="stylesheet" href="normalize.css_8.0.1_normalize.css">
   <style>
+      /* Styling for the first section (top bar) */
       section>section:first-child{
           width: 100vw;
           height: 10vh;
           position: sticky;
-          top: 0;
+          top: 0;  /* Sticky section stays at the top of the viewport */
       }
+
+      /* Styling for the second section (content area) */
       section>section:last-child{
-          height: 90vh;
-          width: 100vw;
+          height: 90vh;/* Takes up 90% of the viewport height */
+          width: 100vw; /* Takes up 100% of the viewport width */
       }
+
+      /* Styling for the large title in the content area */
       h1{
           font-size: 100px;
           color: black;
@@ -25,6 +30,7 @@
           text-align: center;
       }
 
+      /* Styling for the small title above the content */
       h2{
           font-size: 30px;
           color: white;
@@ -33,10 +39,12 @@
           padding-left: 10px;
       }
 
+      /* Background color for the first top bar section */
       section:first-child>section:first-child{
           background-color: #fe351f;
       }
 
+      /* Background color for the first content section */
       section:first-child>section:last-child{
           background-color: #fffeff;
       }
@@ -49,10 +57,12 @@
           background-color: #54a6e8;
       }
 
+      /* Background color for the third top bar section */
       section:nth-child(3)>section:first-child{
           background-color: #292925;
       }
 
+      /* Background color for the third content section */
       section:nth-child(3)>section:last-child{
           background-color: #5f5951;
       }
@@ -68,8 +78,8 @@
 </head>
 <body>
 <section>
-    <section><h2>Card 1</h2></section>
-    <section><h1>Hello</h1></section>
+    <section><h2>Card 1</h2></section> <!-- First top bar section with a small title -->
+    <section><h1>Hello</h1></section>  <!-- First content section with a large title -->
 </section>
 <section>
     <section><h2>Card 2</h2></section>
