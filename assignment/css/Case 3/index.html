@@ -5,11 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case 3</title>
     <link rel="stylesheet" href="normalize.css_8.0.1_normalize.css">
-    <style></style>
+
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        section>section:first-child>div:first-child{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            border: 15px solid #bb8c83;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; /* Center the circle precisely */
+            z-index: 1;
+        }
+        section>section:first-child>div:nth-child(2){
+            width: 270px;
+            height: 270px;
+            border-radius: 100%;
+            border: 15px solid #e31e14;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;/* Center the circle precisely */
+            z-index: 2;
+        }
+        section>section:first-child>div:nth-child(3){
+            width: 270px;
+            height: 270px;
+            border-radius: 100%;
+            background-color:#8e307a;
+            position: absolute;
+            top: 0;
+            bottom: 17px;
+            left: 0;
+            right: 17px;
+            margin: auto; /* Center the circle precisely */
+            z-index: 3;
+        }
+        h1{
+            color: white;
+            position: absolute;
+            top: 105px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+        }
+        section>section:nth-child(2)>div{
+            width: 270px;
+            height: 270px;
+            border-radius: 100%;
+            background-color: #1c98bd;
+            position: absolute;
+            top: 0;
+            bottom: 17px;
+            left: 0;
+            right: 17px;
+            margin: auto;
+            z-index: 4;
+        }
+        section>section:nth-child(3)>div{
+            width: 270px;
+            height: 270px;
+            border-radius: 100%;
+            background-color: #ff6452;
+            position: absolute;
+            top: 16px;
+            bottom: 0;
+            left: 0;
+            right: 17px;
+            margin: auto;
+            z-index: 5;
+        }
+        section>section:last-child>div>h1{
+            top: 72px;
+        }
+    </style>
+
 </head>
 <body>
 <section>
-
+    <section>
+    <div></div>
+    <div></div>
+    <div>
+        <h1>Hello</h1>
+    </div>
+    </section>
+    <section>
+    <div>
+        <h1>Welcome To</h1>
+    </div>
+    </section>
+    <section>
+    <div>
+        <h1>Institute <br>Of <br>Software<br> Engineering<br></h1>
+    </div>
+    </section>
 </section>
 </body>
 </html>
