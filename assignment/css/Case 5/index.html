@@ -6,69 +6,120 @@
     <title>Case 5</title>
     <link rel="stylesheet" href="normalize.css_8.0.1_normalize.css">
   <style>
-      /* Apply styles to the body and entire viewport */
-      body {
-          margin: 0;
-          padding: 0;
+      section{
           height: 100vh;
-          overflow: hidden;
-      }
+          weight:100vw;
 
-      /* Create a container for the rectangles and make it a flex container */
-      .container {
-          display: flex;
-          flex-wrap: wrap;
-          height: 100%; /* full height of the viewport */
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr ;
+          grid-template-columns: 1fr 1fr 1fr 1fr ;
+          font-size: 0;
 
       }
+      section>div:nth-child(1){
+          background: url("pic.jpg");
+          background-size: cover;
+          background-position: center;
+              }
 
-      /* Define the styles for the rectangles */
-      .rectangle {
-          width: 24.824%; /* Each rectangle takes up 24% of the container width (3% for spacing) */
-          height: 33.00%; /* Each rectangle takes up 33.33% of the container height */
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 0.1px solid black; /* Add a 1px black border */
+      section>div:nth-child(2){
+          background: url("pic1.jpg");
+          background-size: cover;
+          background-position: center;
       }
 
-      /* Define the background colors for each rectangle */
-      .red { background-color: #ff0000; }
-      .green { background-color: #008000; }
-      .orange { background-color: #ff4500; }
-      .purple { background-color: #800080; }
-      .pink { background-color: #ff1493; }
-      .blue { background-color: #0000ff; }
-      .brown { background-color: #a52a2a; }
-      .light-purple { background-color: #ee82ee; }
-      .indigo { background-color: #4b0082; }
-      .gold { background-color: #ffd700; }
-      .teal { background-color: #5f9ea0; }
-      .cyan { background-color: #00ffff; }
-  </style>
+      section>div:nth-child(3){
+          background: url("pic2.jpg");
+          background-size: cover;
+          background-position: center;
+      }
+
+      section>div:nth-child(4){
+          background: url("pic3.jpg");
+          background-size: cover;
+          background-position: center;
+      }
+
+      section>div:nth-child(5){
+          background: url("pic1.jpg");
+          background-size: cover;
+          background-position: center;
+      }
+
+      section>div:nth-child(6){
+          background: url("pic6.jpg");
+          background-size: cover;
+          background-position: center;
+      }
+
+      section>div:nth-child(7){
+          background: url("pic7.jpg");
+          background-size: cover;
+          background-position: center;
+      }
+
+      section>div:nth-child(8){
+          background: url("pic1.jpg");
+          background-size: cover;
+          background-position: center;
+      }
+
+      section>div:nth-child(9){
+          background: url("pic4.jpg");
+          background-size: cover;
+          background-position: center;
+      }
+
+      section>div:nth-child(10){
+          background: url("pic5.jpg");
+          background-size: cover;
+          background-position: center;
+      }
+
+      section>div:nth-child(11){
+          background: url("pic6.jpg");
+          background-size: cover;
+          background-position: center;
+      }
+
+      section>div:nth-child(12){
+          background: url("pic7.jpg");
+          background-size: cover;
+          background-position: center;
+      }
+
+      img{
+          width: 25vw;
+          weihght:33.33vh;
+      }
+     </style>
 </head>
 <body>
 
 
-<!-- Create a container for the rectangles -->
-<div class="container">
+
+
+    <section>
     <!-- First Line -->
-    <div class="rectangle red"></div>
-    <div class="rectangle green"></div>
-    <div class="rectangle orange"></div>
-    <div class="rectangle purple"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 
-    <!-- Second Line -->
-    <div class="rectangle pink"></div>
-    <div class="rectangle blue"></div>
-    <div class="rectangle brown"></div>
-    <div class="rectangle light-purple"></div>
+        <!-- second line -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
 
-    <!-- Third Line -->
-    <div class="rectangle indigo"></div>
-    <div class="rectangle gold"></div>
-    <div class="rectangle teal"></div>
-    <div class="rectangle cyan"></div>
-</div>
+        <!-- third line -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+
+    </section>
+
 </body>
 </html>

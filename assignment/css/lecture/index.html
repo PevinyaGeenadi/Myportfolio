@@ -1,10 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture</title>
+    <link rel="stylesheet" href="normalize.css_8.0.1_normalize.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <style>
+        header{
+            height: 100px;
+            width: 60vw;
+            border: 2px solid black;
+            border-radius: 10px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        header>nav>ul>li{
+            display: inline-block;
+            padding: 10px;
+        }
+        nav>ul{
+            width: max-content;
+            height: max-content;
+            font-size: 20px;
+            display: inline-block;
+            padding-left: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /* Styling for the first section (top bar) */
+        section>section:first-child{
+            width: 100vw;
+            height: 10vh;
+            position: sticky;
+            top: 20%;  /* Sticky section stays at the top of the viewport */
+        }
+
+        /* Styling for the second section (content area) */
+        section>section:last-child{
+            height: 80vh;/* Takes up 90% of the viewport height */
+            width: 100vw; /* Takes up 100% of the viewport width */
+        }
+
+        /* Styling for the large title in the content area */
+        h2{
+            font-size: 50px;
+            color: white;
+            position: relative;
+            top: 45%;
+            margin: 0;
+
+        }
+
+        /* Styling for the small title above the content */
+        p{
+            font-size: 15px;
+            color: white;
+            margin-top: 0;
+            padding-top: 25px;
+            padding-left: 10px;
+        }
+
+        /* Background color for the first top bar section */
+        section:first-child>section:first-child{
+            background-color: #fe351f;
+        }
+
+        /* Background color for the first content section */
+        section:first-child>section:last-child{
+            background-color: #fffeff;
+        }
+
+        section:nth-child(2)>section:first-child{
+            background-color: #004583;
+        }
+
+        section:nth-child(2)>section:last-child{
+            background-color: #54a6e8;
+        }
+
+        /* Background color for the third top bar section */
+        section:nth-child(3)>section:first-child{
+            background-color: #292925;
+        }
+
+        /* Background color for the third content section */
+        section:nth-child(3)>section:last-child{
+            background-color: #5f5951;
+        }
+
+        section:nth-child(4)>section:first-child{
+            background-color: #7c322a;
+        }
+        section:nth-child(4)>section:last-child{
+            background-color: #e93b28;
+        }
+
+        section:nth-child(5)>section:first-child{
+            background-color: green;
+        }
+        section:nth-child(5)>section:last-child{
+            background-color: #e93b28;
+        }
+    </style>
+
 </head>
 <body>
-$END$
+<header>
+<nav>
+    <ul>
+        <li><i class="fa-solid fa-user"></i>Customer Manage</li>
+        <li><i class="fa-solid fa-sitemap"></i>Item Manage</li>
+        <li><i class="fa-solid fa-cart-shopping"></i>Order Manage</li>
+        <li><i class="fa-solid fa-file-invoice"></i>Invoice Manage</li>
+    </ul>
+</nav>
+</header>
+<section>
+    <section><h2>Home</h2></section> <!-- First top bar section with a small title -->
+    <section><!-- First content section with a large title -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+        Lorem ipsum dolor sit vgvhgvvhg amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+       </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+    </section>
+</section>
+<section>
+    <section><h2>Customer Manage</h2></section>
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+        Lorem ipsum dolor sit vgvhgvvhg amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+    </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p></section>
+</section>
+<section>
+    <section><h2>Item Manage</h2></section>
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit vgvhgvvhg amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+    </section>
+</section>
+<section>
+    <section><h2>Order Manage</h2></section>
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit vgvhgvvhg amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+    </section>
+</section>
+<section>
+    <section><h2>Invoice Manage </h2></section>
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit vgvhgvvhg amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet beatae dolores error id itaque iure maiores nihil numquam omnis possimus quibusdam quisquam quod, ullam unde vitae voluptate! Aspernatur
+        </p>
+    </section>
+</section>
 </body>
 </html>

@@ -6,131 +6,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="normalize.css_8.0.1_normalize.css">
   <style>
-    section:nth-child(1){
-      position: relative;
-      width: 100%;
+
+    section{
+      width:100vw ;
       height: 100vh;
-      border: 0px solid;
+      display: grid;
+      grid-template-rows:repeat(3 ,1fr) ;
+      grid-template-columns: repeat(4, 1fr);
     }
 
-    section:nth-child(1)>section:nth-child(1)>section{
-      position: absolute;
-      width: 75%;
-      height: 33%;
-      top: 0%;
-      left: 0%;
-      background-image: url('assets/pic.jpg');
-      border: 2px solid;
+    section>div{
+      border: 1px solid black;
     }
 
-    section:nth-child(1)>section:nth-child(1)>section>div{
-      position: absolute;
-      width: 33%;
-      height: 100%;
-      top: 0%;
-      right: 0%;
-      background-image: url('assets/pic1.jpg');
-      border-left: 2px solid;
+    section>div:nth-child(1){
+      background: url("assets/pic6.jpg");
+      grid-column: 1/3;
+      grid-row: 1/2;
+      background-size: cover;
+      background-position: center;
+    }
+    section>div:nth-child(2){
+      background: url("assets/pic5.jpg");
+      background-size: cover;
+      background-position: center;
+
     }
 
-    section:nth-child(1)>section:nth-child(2){
-      position: absolute;
-      width: 25%;
-      height: 100%;
-      top: 0%;
-      right: 0%;
-      background-image: url('assets/pic2.jpg');
-      border-left: 2px solid;
+    section>div:nth-child(3){
+      background: url("assets/pic3.jpg");
+      background-size: cover;
+      background-position: center;
+      grid-column: 4/5;
+      grid-row: 1/5;
     }
 
-    section:nth-child(1)>section:nth-child(3)>section{
-      position: absolute;
-      width: 75%;
-      height: 33%;
-      top: 0%;
-      left: 0%;
-      bottom: 0%;
-      margin: auto;
-      background-image: url('assets/pic3.jpg');
-      border-bottom: 2px solid;
-      border-right: 2px solid;
+    section>div:nth-child(4){
+      background: url("assets/pic2.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    section>div:nth-child(5){
+      background: url("assets/pic3.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    section>div:nth-child(6){
+      background: url("assets/pic7.jpg");
+      background-size: cover;
+      background-position: center;
     }
 
-    section:nth-child(1)>section:nth-child(3)>section>div:nth-child(1){
-      position: absolute;
-      width: 33%;
-      height: 100%;
-      top: 0%;
-      left: 0%;
-      right: 0%;
-      margin: auto;
-      background-image: url('assets/pic4.jpg');
-      border-right: 2px solid;
-      border-left: 2px solid;
+    section > div:nth-child(7) {
+      background: url("assets/pic6.jpg");
     }
 
-    section:nth-child(1)>section:nth-child(3)>section>div:nth-child(2){
-      position: absolute;
-      width: 33%;
-      height: 100%;
-      top: 0%;
-      right: 0%;
-      background-image: url('assets/pic5.jpg');
-      border-right: 2px solid;
-      border-left: 2px solid;
-    }
-
-    section:nth-child(1)>section:nth-child(4)>div{
-      position: absolute;
-      width: 75%;
-      height: 34%;
-      left: 0%;
-      bottom: 0%;
-      background-image: url('assets/pic6.jpg');
-      border-top: 2px solid;
-      border-right: 2px solid;
-    }
-
-    section:nth-child(1)>section:nth-child(4)>div>div{
-      position: absolute;
-      width: 33%;
-      height: 100%;
-      left: 0%;
-      bottom: 0%;
-      background-image: url('assets/pic7.jpg');
-      border-left: 2px solid;
-      border-right: 2px solid;
+    section>div:nth-child(8){
+      background: url("assets/pic4.jpg");
+      grid-row:3/4 ;
+      grid-column: 2/4;
+      background-size: cover;
+      background-position: center;
     }
 
     </style>
   </head>
 <body>
 <section>
-  <!--First Line-->
-  <section>
-    <section>
-      <div></div>
-    </section>
-  </section>
+  <!-- First Line -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 
-  <!--Right Side Line-->
-  <section></section>
+  <!-- second line -->
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 
-  <!--Second Line-->
-  <section>
-    <section>
-      <div></div>
-      <div></div>
-    </section>
-  </section>
-
-  <!--Third Line-->
-  <section>
-    <div>
-      <div></div>
-    </div>
-  </section>
-
+  <!-- third line -->
+ <!-- <div></div>
+  <div></div>
+  <div></div>
+  <div></div>  -->
 </section>
 </body>
 </html>
