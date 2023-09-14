@@ -19,10 +19,29 @@
         header{
             background-color: #2c2b2b;
         }
-        main>section:nth-child(1){
+        main>section>section:nth-child(1){  <!-- home -->
             background-color:#2c2b2b ;
         }
-    </style>
+        main>section:nth-child(2){   <!-- about -->
+            background-color: #221E1E;
+        }
+        main>section>section:nth-child(3){   <!-- education -->
+
+            background-image: url("assets/edubg.jpg");
+        }
+        main>section:nth-child(3){   <!-- skills -->
+            background-color: pink;
+        }
+        main>section:nth-child(5){   <!-- project -->
+            background-color: #221E1E;
+        }
+        main>section:nth-child(5){   <!-- assignment -->
+            background-color: blueviolet;
+        }
+        main>section:nth-child(5){   <!-- gallery -->
+            background-color: lightcoral;
+        }
+</style>
 </head>
 <body>
     <header>
@@ -38,6 +57,7 @@
         </nav>
     </header>
     <main>
+
         <!--Home Start-->
         <section>
            <dfn id="Home"> </dfn>
@@ -182,6 +202,7 @@
 
         </section>
         <!--Gallery End-->
+
     </main>
     <footer>
         <h1><u><dfn id="Contact">Contact</dfn></u></h1>
