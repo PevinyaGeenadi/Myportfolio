@@ -1,0 +1,151 @@
+body>footer{
+    background-color: #221E1E;
+    width:100vw ;
+    height: 100vh;
+}
+body>footer>h1{
+    position: absolute;
+    left: 40%;
+    top: 0;
+    font-size: 2.3rem;
+    color: white;
+}
+footer {
+    background-color: black;
+    z-index: 0;
+}
+
+footer > h3 {
+    color: #B8B8B8;
+}
+
+footer > i {
+    font-size: 1.5em;
+}
+
+
+footer > aside li {
+    color: #C4C4C4;
+}
+
+footer > aside li:hover {
+    color: white;
+}
+
+footer > address {
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    width: max-content;
+    height: max-content;
+}
+
+footer > address > ul:first-child {
+    color: #C4C4C4;
+    height: 36vh;
+}
+
+footer > address > ul:nth-child(2) > li, footer a {
+    color: #C4C4C4;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+footer > address > ul:nth-child(2) {
+    height: 33vh;
+    top: 0;
+    left: 10vw;
+}
+
+footer > aside:nth-child(3) {
+    position: absolute;
+    top: 67vh;
+    left: 18vw;
+}
+
+footer > aside:nth-child(3) > ul {
+
+    flex-direction: row;
+    width:30vh;
+}
+
+footer > small {
+    color: #c4c4c4;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 6vh;
+}
+footer label {
+    font-weight: bolder;
+}
+footer > section {
+
+    background-color: #383838;
+    position: absolute;
+    transform: rotate(
+            90deg
+    );
+    width: 65vh;
+    height: 0.2vh;
+    top: 42vh;
+    left: 33vw;
+}
+
+
+
+footer > aside:nth-child(4) > form {
+    position: absolute;
+    top: 12vh;
+    left: 57vw;
+    font-size: 1.5em;
+    color: #c4c4c4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 55vh;
+}
+
+footer input {
+    border-radius: 10px;
+    width: 35vw;
+}
+
+footer form > button {
+    background-color: #8C1717;
+    color: white;
+    border: 2px solid #8C1717;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5vh;
+    right: 0;
+    height: 5vh;
+    width: 12vh;
+    font-weight: bolder;
+    font-size: 1.1em;
+
+}
+
+footer form > button:hover {
+
+    background-color: silver;
+
+}
+
+footer input:nth-child(8) {
+    height: 12vh;
+}
+

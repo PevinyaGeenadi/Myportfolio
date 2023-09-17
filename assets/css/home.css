@@ -1,0 +1,61 @@
+body>main>section:nth-child(1)>section {
+    flex: 1;
+}
+body>main>section:nth-child(1)>aside {
+    flex: 1;
+    text-align: right;
+}
+
+body>main>section:nth-child(1)>section>h1 {
+    font-family: chivo, serif;
+    font-size: 180px;
+    color: #8C1717;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+body>main>section:nth-child(1)>section>h1>span{
+    color: white;
+}
+body>main>section:nth-child(1)>section>h2{
+    font-family: chewy;
+    font-size: 100px;
+    color: #8C1717;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-left: 15px;
+}
+body>main>section:nth-child(1)>section>h2>span{
+    color: white;
+}
+body>main>section:nth-child(1)>section>h2>span{
+    color: white;
+}
+
+body>main>section:nth-child(1)>section>h3{
+    font-family: chewy, serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+
+body>main>section:nth-child(1)>section>a{
+    background-color: #8C1717;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1px;
+    margin-left: 20px;
+}
+
+
+body>main>section:nth-child(1)>section>a:hover {
+    background-color: #8C1717;
+}
+
+

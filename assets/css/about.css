@@ -1,0 +1,18 @@
+body>main>section:nth-child(2)>section>h1{
+    justify-content: center;
+    display: flex;
+    color: #8C1717;
+}
+
+body>main>section:nth-child(2)>section>h1>u>span{
+    color: white;
+}
+
+body>main>section:nth-child(2)>section {
+    flex: 1;
+}
+body>main>section:nth-child(2)>aside {
+    flex: 1;
+    text-align: left;
+    background-size: cover;
+}
