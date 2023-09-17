@@ -2,9 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Case1</title>
+    <link rel="stylesheet" href="../../../assets/css/normalize.css_8.0.1_normalize.css">
+    <link rel="stylesheet" href="../../../assets/fontawesome-free-6.4.2-web/css/all.css">
+<style>
+    * {
+        margin: 0;
+
+    }
+    body {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    section{
+        height: 600px;
+        width: 200px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        right: 250px;
+    }
+    section>div{
+        height: 50px;
+        width: 300px;
+        /*border: 2px solid green;*/
+        background-color: purple;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        left: 0px;
+        right: 0px;
+        transition: all 2s;
+        position: relative;
+        box-shadow: 1px 2px 10px 2px black;
+    }
+    section>div>h2,p{
+        margin: 0;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    section>div:hover{
+        position: relative;
+        left: 250px;
+        cursor: pointer;
+        transition: all 2s;
+    }
+</style>
 </head>
 <body>
-
+<section>
+    <div>
+        <h2>Menu One</h2>
+        <p><i class="fa-solid fa-house"></i></p>
+    </div>
+    <div>
+        <h2>Menu Two</h2>
+        <p><i class="fa-solid fa-truck-medical" style="color: #2b2e54;"></i></p>
+    </div>
+    <div>
+        <h2>Menu Three</h2>
+        <p><i class="fa-solid fa-user"></i></p>
+    </div>
+    <div>
+        <h2>Menu four</h2>
+        <p><i class="fa-solid fa-user"></i></p>
+    </div>
+    <div>
+        <h2>Menu Five</h2>
+        <p><i class="fa-solid fa-cart-shopping"></i></p>
+    </div>
+</section>
 </body>
 </html>
