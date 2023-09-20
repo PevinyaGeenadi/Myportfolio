@@ -16,41 +16,39 @@
         background-size: cover;
         background-attachment: fixed;
     }
-    section{
+    section   {
         height: 600px;
         width: 200px;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        right: 250px;
+        right: 250px;    /* hide krnn, meya right ekata move kara */
     }
-    section>div{
+    section>div {
         height: 50px;
         width: 300px;
-        /*border: 2px solid green;*/
-        background-color: purple;
+        background-color: #903ee7;
         color: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
         left: 0px;
         right: 0px;
-        transition: all 2s;
         position: relative;
-        box-shadow: 1px 2px 10px 2px black;
+        box-shadow: 6px 5px 10px 2px #00000080;
     }
-    section>div>h2,p{
+    section>div>h2,p {
         margin: 0;
         padding: 10px;
         font-size: 30px;
     }
 
-    section>div:hover{
+    section>div:hover {  /* mousepoint eka div eken thibbama wena de*/
         position: relative;
-        left: 250px;
+        left: 250px;  /* hide krpu eka penna, meya left karai  */
         cursor: pointer;
-        transition: all 2s;
+        transition: all 2.1s;
     }
 </style>
 </head>
@@ -66,11 +64,11 @@
     </div>
     <div>
         <h2>Menu Three</h2>
-        <p><i class="fa-solid fa-user"></i></p>
+        <p><i class="fa-solid fa-book-atlas"></i></p>
     </div>
     <div>
         <h2>Menu four</h2>
-        <p><i class="fa-solid fa-user"></i></p>
+        <p><i class="fa-solid fa-layer-group"></i></p>
     </div>
     <div>
         <h2>Menu Five</h2>
