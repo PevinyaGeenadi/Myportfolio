@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1</title>
+    <style>
+        div{
+            width: 200px;
+            height: 90px;
+            border: 2px solid black;
+            animation-name: anima;
+            animation-duration: 2s;
+            background-color: red;
+            border-radius: 20px;
+            animation-iteration-count: infinite;
+            left: 0;
+            position: relative;
+            animation-direction: alternate;
+        }
+
+        @keyframes anima {
+            0%{
+                background-color: yellow;
+                left: 0;
+                top: 0;
+                transform: rotate(0deg);
+            }
+            25%{
+                left: 400px;
+                top: 0;
+                background-color: blue;
+                transform: rotate(180deg);
+            }
+            50%{
+                background-color: deeppink;
+                left: 400px;
+                top: 400px;
+                transform: rotate(360deg);
+            }
+            75%{
+                background-color: green;
+                left: 0px;
+                top: 400px;
+                transform: rotate(180deg);
+            }
+            100%{
+                background-color: #7c322a;
+                left: 0px;
+                top: 0px;
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+ <div>
+
+ </div>
+</body>
+</html>

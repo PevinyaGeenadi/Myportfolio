@@ -22,9 +22,10 @@
       bottom: 0;
       top: 0;
       margin: auto;
+        cursor: pointer;
     }
 
-    section>h1{
+    section>h1 {
       color: white;
       position: absolute;
       left: 0;
@@ -32,17 +33,17 @@
       bottom: 0;
       top: 0;
       margin: auto;
-      width: max-content;
-      height: max-content;
+      width: max-content;  /* width eka adjust karagani */
+      height: max-content;  /* height eka adjust karagani */
     }
     section:hover{
-      transform: rotate(360deg);
+      transform: rotate(360deg);  /* anshaka 360k karakawanna */
       transition: 2s all;
     }
 
     section:hover h1{
-      transform: rotate(-360deg);
-      transition: 2s all;
+      transform: rotate(-360deg);  /* anshaka 360k karakawena e speed eka reverse karai */
+      transition: 2s all;   /* speed eka wens kroth penei same speed dnmoth nopene */
     }
   </style>
 

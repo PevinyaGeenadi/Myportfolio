@@ -1,5 +1,6 @@
 
 
+
     body {
         background-color: #2c2b2b;
         position: relative;
@@ -422,7 +423,6 @@
 
 
     /*====================Gallery section======================*/
-
     body > main > section:nth-child(7) {
         display: flex;
         position: relative;
@@ -477,14 +477,13 @@
     }
 
 
-    body>footer{
+    body > footer {
         background-color: #221E1E;
-        width:100vw ;
+        width: 100vw;
         height: 100vh;
         position: relative;
         display: flex;
     }
-
 
 
 
