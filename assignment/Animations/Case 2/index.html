@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        section{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+        }
+        img{
+            animation-name: anima;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            flex-shrink: 0;
+        }
+        @keyframes anima {
+            0% {
+                left: 0vw;
+            }
+            33.3% {
+                left: -100vw;
+            }
+            66.3%{
+                left: -200vw;
+            }
+            100% {
+                left: -300vw;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<section>
+    <img src="images.jpg" />
+    <img src="img1.jpg"/>
+
+    <img src="img2.jpg" />
+    <img src="img3.jpg" />
+
+   </section>
+</body>
+</html>
