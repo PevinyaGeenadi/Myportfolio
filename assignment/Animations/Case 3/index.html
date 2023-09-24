@@ -10,7 +10,7 @@
         background-color: #152039;
     }
     div:nth-child(1){
-        background-color: pink;
+        background-color: #cda09f;
         width: 300px;
         height: 300px;
         border-radius: 100%;
@@ -20,10 +20,16 @@
         bottom: 0;
         left: 0;
         right: 0;
+        animation-name: anima;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
     }
 
     div:nth-child(2){
-        background-color: mediumpurple;
+        background-color: #152039;
         width: 300px;
         height: 300px;
         border-radius: 100%;
@@ -33,7 +39,28 @@
         bottom: 0;
         left: 0;
         right: 0;
+
     }
+    @keyframes anima {
+        0% {
+            left: 70px;
+            bottom: 70px;
+        }
+        50% {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
+
+        }
+        100% {
+            right: 70px;
+            top: 70px;
+        }
+    }
+
+
 
 </style>
 </head>
