@@ -1,7 +1,4 @@
-
-
-
-    body {
+   body {
         background-color: #2c2b2b;
         position: relative;
         overflow-x: hidden;
@@ -9,7 +6,6 @@
 
     * {
         scroll-behavior: smooth;
-
     }
 
     header {
