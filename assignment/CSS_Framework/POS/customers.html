@@ -28,7 +28,7 @@
     </section>
 </header>
 <br><br>
-
+<main class="container-fluid">
 <form class="col-4 bg-light"  >
 <section class="text-center  bg-danger">
     <nav class="nav justify-content-around">
@@ -56,17 +56,19 @@
         </div>
     </div>
 </div>
+    <div class="text-end">
+        <button class="btn btn-danger mt-3" type="button">Delete</button>
+        <button class="btn btn-success mt-3" type="button">Clear</button>
+    </div>
 </form>
 
 
+<div class="container-fluid">
 
+    <div class= "row justify-content-end">
 
-<div class="container text-center">
-
-    <div class="row">
-        <div class="row justify-content-md-center">
-        <div class="col">
-            <button type="submit" class="btn btn-primary">New Customer</button>
+        <div class="col col-lg-2">
+            <button type="submit"  class="btn btn-primary">New Customer</button>
         </div>
         <div class="col col-lg-2">
             <button type="submit" class="btn btn-primary">View All Customer</button>
@@ -75,22 +77,43 @@
     </div>
 </div>
 
+    <section class="mt-4">
+        <table class="table ">
+            <thead class="bg-secondary">
+            <tr class="text-white text-center">
+                <th scope="col">Customer ID</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Address</th>
+                <th scope="col">Tel No</th>
+
+            </tr>
+            </thead>
+            <tbody class="text-center">
+            <tr>
+                <td>C001</th>
+                <td>nadya</td>
+                <td>Galle</td>
+                <td>071-9856342</td>
+
+            </tr>
+            <tr>
+                <td>C002</th>
+                <td>chanisha</td>
+                <td>negombo</td>
+                <td>077-2045234</td>
+            </tr>
+            <tr>
+                <td>C003</th>
+                <td>sadagi</td>
+                <td>Galle</td>
+                <td>077-6734526</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</main>
 
 <script src="bootstrap/js/bootstrap.js"></script>
 </body>
