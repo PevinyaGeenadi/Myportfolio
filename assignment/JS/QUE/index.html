@@ -2,64 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Que</title>
-    <style>
-        section {
-            width: 70vw;
-            height: 200px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            display: flex;
-            align-items: center;
-        }
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="../../../assets/fontawesome-free-6.4.2-web/css/all.css">
 
-        section > div {
-            flex-grow: 1;
-            height: 33%;
-            border: 1px solid black;
-        }
+    <title>Que-assignment</title>
+<style>
+    body{
+        background-color:#353155
+    }
+    section>img{
+        height: 30vh;
+        width: 12vw;
+    }
+    body > img {
+        position: absolute;
+        bottom: 25vh;
+        right: 0;
+        top:180px;
+        height: 50vh;
+    }
+    section {
+        width: 75%;
+        top:250px;
+        position: absolute;
+        bottom: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    button {
+        border: none;
+        width: 15vw;
+        height: 8vh;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 8px;
+    }
 
-        section > div:first-child {
-            align-self: start;
-        }
+    button:hover {
+        color: black;
+        border: 2px solid white;
+    }
 
-        section > div:last-child {
-            align-self: end;
-        }
-    </style>
+</style>
 </head>
 <body>
+<section>
+    <img alt="image" id="A" src="assets/A.png">
+    <img alt="image" id="B" src="assets/B.png">
+    <img alt="image" id="C" src="assets/C.png">
+    <img alt="image" id="D" src="assets/D.png">
+    <img alt="image" id="E" src="assets/E.png">
+    <img alt="image" id="F" src="assets/F.png">
+</section>
 
-<main>
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-</main>
+<img alt="image" src="assets/house.png">
+
+<button id="start" style="background-color: #228B22 ">START</button>
+<button id="end" style="background-color: #DC143C">END</button>
+<script src="bootstrap/js/jquery-3.7.1.min.js"></script>
+
 <script>
-    let colors = ['yellow','deeppink','blue','red', 'green', 'orange'];
-    let divs = document.querySelectorAll("section>div");
+    $(document).ready(function() {
+        let timerId;
 
+        function animateQue() {
+            let images = $("section>img");
+            let img1 = images.eq(0).attr('src');
+            let img2 = images.eq(1).attr('src');
+            let img3 = images.eq(2).attr('src');
+            let img4 = images.eq(3).attr('src');
+            let img5 = images.eq(4).attr('src');
+            let img6 = images.eq(5).attr('src');
 
-    setInterval(processQue,200);
-
-    function processQue() {
-        for (let i = 0; i < colors.length; i++) {
-            divs[i].style.background=colors[i];
+            images.eq(0).attr('src', img6);
+            images.eq(1).attr('src', img1);
+            images.eq(2).attr('src', img2);
+            images.eq(3).attr('src', img3);
+            images.eq(4).attr('src', img4);
+            images.eq(5).attr('src', img5);
         }
 
+        $("#start").click(function () {
+            clearInterval(timerId);
+            timerId = setInterval(animateQue, 1200);
+        });
 
-        let lastValue=colors.pop();
-        colors.unshift(lastValue);
-    }
+        $("#end").click(function () {
+            clearInterval(timerId);
+        });
+    });
 </script>
+
+
 </body>
 </html>
+
