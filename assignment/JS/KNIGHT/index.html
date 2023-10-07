@@ -65,8 +65,6 @@
            top: 275px;
            left: 1020px;
        }
-
-
        button {
            margin: 10px;
            padding: 10px 20px;
@@ -79,18 +77,15 @@
            cursor: pointer;
        }
 
-
-
-
-
    </style>
+
 </head>
 <body>
 <h1>JavaScript Knight Rider</h1>
 <div id="line1"></div>
 <div id="line2"></div>
 
-<audio id="knightAudio" src="assets/audio/Knight%20Rider.mp3"></audio>
+<audio id="KnightAudio" src="assets/Knight%20Rider%20Sms%20!%20Knight%20Rider%20!%20Theme.mp3"></audio>
 
 <section>
     <div id="light1"></div>
@@ -107,6 +102,53 @@
     <button id="stop" style="background-color: red">End</button>
 </div>
 
+<script src="assets/bootstrap/js/jquery-3.7.1.min.js"></script>
+<script>
+
+        var colors = ["#962727", "#b04141", "#ec6666", "#eaadad", "#ffc3c3", "#ffc3c3", "white"];
+        let count = 0;
+        let revIndex = 0;
+        let timeId;
+
+        $("#start").click(function () {
+        $("#KnightAudio")[0].play();
+        clearInterval(timeId);
+        timeId = setInterval(changeColor, 100);
+    });
+
+        $("#stop").click(function () {
+        $("#KnightAudio")[0].pause();
+        clearInterval(timeId);
+    });
+
+        function changeColor() {
+            if (count == 20) {
+                count = 0;
+                revIndex = 0;
+            }
+            $("#light1").css('background-color', colors[count]);
+            $("#light2").css('background-color', colors[count - 1]);
+            $("#light3").css('background-color', colors[count - 2]);
+            $("#light4").css('background-color', colors[count - 3]);
+            $("#light5").css('background-color', colors[count - 4]);
+            $("#light6").css('background-color', colors[count - 5]);
+            $("#light7").css('background-color', colors[count - 6]);
+
+
+            if (count >= 10) {
+                $("#light1").css('background-color', colors[revIndex - 6]);
+                $("#light2").css('background-color', colors[revIndex - 5]);
+                $("#light3").css('background-color', colors[revIndex - 4]);
+                $("#light4").css('background-color', colors[revIndex - 3]);
+                $("#light5").css('background-color', colors[revIndex - 2]);
+                $("#light6").css('background-color', colors[revIndex - 1]);
+                $("#light7").css('background-color', colors[revIndex]);
+                revIndex++;
+            }
+            count++;
+        }
+
+</script>
 
 </body>
 </html>

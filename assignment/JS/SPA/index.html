@@ -68,13 +68,57 @@
     </div>
 </section>
 
-
-
-
-
-
-
-
 <script src="bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
+
+
+<script>
+    var colors = ['red', 'rgba(219, 55, 55, 0.68)', 'rgba(222, 98, 98, 0.68)', 'white'];
+    let count = 0;
+    let revIndex = 0;
+    let timeId;
+
+    $("#start").click(function () {
+        $("#knightAudio")[0].play();
+        clearInterval(timeId);
+        timeId = setInterval(changeColor, 100);
+    });
+
+    $("#stop").click(function () {
+        $("#knightAudio")[0].pause();
+        clearInterval(timeId);
+    });
+
+    function changeColor() {
+        if (count == 20) {
+            count = 0;
+            revIndex = 0;
+        }
+        $("#light1").css('background-color', colors[count]);
+        $("#light2").css('background-color', colors[count - 1]);
+        $("#light3").css('background-color', colors[count - 2]);
+        $("#light4").css('background-color', colors[count - 3]);
+        $("#light5").css('background-color', colors[count - 4]);
+        $("#light6").css('background-color', colors[count - 5]);
+        $("#light7").css('background-color', colors[count - 6]);
+
+
+        if (count >= 10) {
+            $("#light1").css('background-color', colors[revIndex - 6]);
+            $("#light2").css('background-color', colors[revIndex - 5]);
+            $("#light3").css('background-color', colors[revIndex - 4]);
+            $("#light4").css('background-color', colors[revIndex - 3]);
+            $("#light5").css('background-color', colors[revIndex - 2]);
+            $("#light6").css('background-color', colors[revIndex - 1]);
+            $("#light7").css('background-color', colors[revIndex]);
+            revIndex++;
+        }
+        count++;
+
+    }
+
+
+
+
+</script>
