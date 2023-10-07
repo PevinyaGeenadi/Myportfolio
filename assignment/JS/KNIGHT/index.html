@@ -4,27 +4,109 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>KITT theme light system</title>
+   <style>
+       body {
+           display: flex;
+           justify-content: center;
+           text-align: center;
+           background-color: black;
+       }
+       h1 {
+           color: #e24b44;
+           position: absolute;
+           top: 60px;
+           font-size: 25px;
+       }
+       #line1 {
+           position: absolute;
+           width:950px;
+           top: 200px;
+           border:3px solid white;
 
+       }
+       #line2 {
+           position: absolute;
+           width:950px;
+           top: 400px;
+           border:3px solid white;
+       }
+       section> div{
+           position: absolute;
+           background: white;
+           height: 55px;
+           width: 105px;
+           border-radius: 10px;
+       }
+       #light1{
+           top: 275px;
+           left: 330px;
+       }
+       #light2{
+           top: 275px;
+           left: 445px;
+       }
+       #light3{
+           top: 275px;
+           left: 560px;
+       }
+       #light4{
+           top: 275px;
+           left: 675px;
+       }
+       #light5{
+           top: 275px;
+           left: 790px;
+       }
+       #light6{
+           top: 275px;
+           left: 905px;
+       }
+       #light7{
+           top: 275px;
+           left: 1020px;
+       }
+
+
+       button {
+           margin: 10px;
+           padding: 10px 20px;
+           font-size: 20px;
+           color: white;
+           position: relative;
+           border: 2px solid white;
+           top: 500px;
+           border-radius: 8px;
+           cursor: pointer;
+       }
+
+
+
+
+
+   </style>
 </head>
 <body>
 <h1>JavaScript Knight Rider</h1>
-<div></div>
-<div></div>
+<div id="line1"></div>
+<div id="line2"></div>
+
+<audio id="knightAudio" src="assets/audio/Knight%20Rider.mp3"></audio>
 
 <section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div id="light1"></div>
+    <div id="light2"></div>
+    <div id="light3"></div>
+    <div id="light4"></div>
+    <div id="light5"></div>
+    <div id="light6"></div>
+    <div id="light7"></div>
 </section>
 
 <div>
     <button id="start" style="background-color: #165B33; ">Start</button>
     <button id="stop" style="background-color: red">End</button>
 </div>
+
 
 </body>
 </html>
