@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link rel="stylesheet" href="../../../assets/fontawesome-free-6.4.2-web/css/all.css">
+
 </head>
 <body>
+<div class="container">
+  <div class="calculator">
+      <div class="nm">Scientific calculator</div>
+      <input type="text" id="result" readonly>
+      <div>
+          <input type="button" value="CE" id="btncl" class="button" />
+          <i class="fa-solid fa-delete-left" class="button"></i>
+          <input type="button" value="/" class="button" />
+          <input type="button" value="*" class="button" />
 
+      </div>
+      <div>
+          <input type="button" value="7" class="button" />
+          <input type="button" value="8" class="button" />
+          <input type="button" value="9" class="button" />
+          <input type="button" value="-" class="button" />
+      </div>
+      <div>
+          <input type="button" value="4" class="button" />
+          <input type="button" value="5" class="button" />
+          <input type="button" value="6" class="button" />
+          <input type="button" value="+" id="btn-plus" class="button" />
+      </div>
+      <div>
+          <input type="button" value="1" class="button" />
+          <input type="button" value="2" class="button" />
+          <input type="button" value="3" class="button" />
+      </div>
+      <div>
+          <input type="button" value="0" id="btn-s" class="button" />
+          <input type="button" value="." class="button" />
+          <input type="button" value="=" id="btn-equal" class="button" />
+
+      </div>
+
+  </div>
+</div>
 </body>
 </html>
