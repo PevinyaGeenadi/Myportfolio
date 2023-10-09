@@ -6,6 +6,8 @@
 }
 .nm{
     color:#00f0ee;
+    font-size: 18px;
+    font-weight: 500;
 }
 .container {
     width: 100%;
@@ -38,8 +40,8 @@
 
 #display{
     background-color: #343434;
-    font-size: large;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 600;
 }
 
 form .display {
@@ -55,13 +57,14 @@ form .display input {
     box-shadow: none;
 }
 
-#btncl {
+#btn-cl {
     background-color: #018f90;
     box-shadow: 5px 5px 7px rgba(255, 255, 255, 0.1);
 }
 
 .calculator form div #btn-s {
     width: 145px;
+    background-color: #343434;
 }
 .calculator form div #btn-d {
     height: 75px;
@@ -73,6 +76,8 @@ form .display input {
 .calculator form div #btn-plus {
     height: 75px;
 }
-div>.buttons{
+
+
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
     background-color: #343434;
 }
