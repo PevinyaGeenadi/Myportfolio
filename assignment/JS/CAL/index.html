@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="../../../assets/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="assets/style.css">
 
 </head>
 <body>
 <div class="container">
   <div class="calculator">
-      <div class="nm">Scientific calculator</div>
-      <input type="text" id="result" readonly>
+      <form>
+      <div class="nm">CALCULATOR</div>
+      <div class="display">
+          <input type="text" name="display" id="display" />
+      </div>
       <div>
-          <input type="button" value="CE" id="btncl" class="button" />
-          <i class="fa-solid fa-delete-left" class="button"></i>
+          <input type="button" value="AC" id="btncl" class="button" />
+          <input type="button" value="DE" class="button" />
           <input type="button" value="/" class="button" />
           <input type="button" value="*" class="button" />
 
@@ -32,17 +36,18 @@
           <input type="button" value="+" id="btn-plus" class="button" />
       </div>
       <div>
-          <input type="button" value="1" class="button" />
-          <input type="button" value="2" class="button" />
-          <input type="button" value="3" class="button" />
+          <input type="button" value="1" class="buttons" />
+          <input type="button" value="2" class="buttons" />
+          <input type="button" value="3" class="buttons" />
+          <input type="button" value="." id="btn-d" class="button" />
+
       </div>
       <div>
           <input type="button" value="0" id="btn-s" class="button" />
-          <input type="button" value="." class="button" />
           <input type="button" value="=" id="btn-equal" class="button" />
 
       </div>
-
+      </form>
   </div>
 </div>
 </body>
