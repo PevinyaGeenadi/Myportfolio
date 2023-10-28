@@ -23,9 +23,13 @@ body > main > section:nth-child(6) > h1 {
 }
 
 .assignments-container{
-    width: 370px;
-    height: 330px;
-    cursor: pointer;
+    position: relative;
+    width: 45vh;
+    height: 25vh;
+    border-radius: 15px;
+    text-align: center;
+    opacity: 95%;
+    margin: 3.3vh;
 }
 
 .wrapper{

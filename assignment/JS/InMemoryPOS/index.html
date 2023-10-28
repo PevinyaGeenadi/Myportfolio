@@ -4,8 +4,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InMemory POS system</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+
 </head>
 <body>
 
+<header>
+    <section class="container-fluid col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-12" >
+        <nav class="navbar navbar-light bg-dark bg-opacity-50 row">
+            <div class="container-fluid col">
+                <a class="navbar-brand text-danger fw-bold " href="index.html">
+                    FRESHMARKET POS SYSTEM
+                </a>
+            </div>
+        </nav>
+    </section>
+    <section class="text-center  bg-success">
+        <nav class="nav justify-content-center">
+            <a aria-current="page" class="nav-link link-light" href="index.html">HOME</a>
+            <a class="nav-link link-light" href=" customers.html" id="btnCustomer"
+               onclick="OpenLoadFunction()">CUSTOMERS</a>
+            <a class="nav-link link-light" href="item.html" id="btnItem" onclick="generateItemId()">ITEMS</a>
+            <a class="nav-link link-light" href="placeOrder.html" id="btnOrder" onclick="forOrder()"> ORDER</a>
+        </nav>
+    </section>
+</header>
+<section class="">
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+        <div class="carousel-indicators">
+            <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                    data-bs-target="#carouselExampleCaptions" type="button"></button>
+            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
+                    type="button"></button>
+            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
+                    type="button"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="..." class="d-block w-100" src="assets/fru.png">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="..." class="d-block w-100" src="assets/bg2.png">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="..." class="d-block w-100" src="assets/Vegetables3.png">
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
+                type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+
+<!--- order page -->
+<section class="container-fluid">
+    <nav class="navbar navbar-light bg-dark bg-opacity-50 row">
+        <div class="container-fluid col">
+            <a class="navbar-brand text-danger fw-bold " href="index.html">
+                FRESHMARKET POS SYSTEM
+            </a>
+        </div>
+    </nav>
+</section>
+<section class="text-center  bg-success">
+    <nav class="nav justify-content-center">
+        <a aria-current="page" class="nav-link link-light" href="index.html">HOME</a>
+        <a class="nav-link link-light" href="customers.html ">CUSTOMERS</a>
+        <a class="nav-link link-light" href="items.html">ITEMS</a>
+        <div class="p text-primary-emphasis bg-warning border border-danger rounded-2">
+            <a class="nav-link link-light" href="placeOrder.html">PLACE ORDER</a> </div>
+    </nav>
+</section>
+
+
+<section class="p-2" id="order" style="display: block;">
+    <h2>Order</h2>
+    <div class="d-flex">
+        <div class="col bg-secondary m-4 pb-4">
+            <section class="container">
+                <div class="row">
+                    <div class="bg-dark text-white  mb-3 p-2"><h4>Invoice Details</h4></div>
+                    <div class="col">
+                        Order ID:
+                        <form>
+                            <input class="form-control " id="txtOrderId" type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        Order Date:
+                        <form>
+                            <input class="form-control" id="txtOrderDate" type="date">
+                        </form>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Customer ID:
+                        <select class="form-select" id="cmbCustomerIDS">
+
+                        </select>
+                    </div>
+                    <div class="col">
+                        Salary:
+                        <form>
+                            <input class="form-control" id="txtCusSalaryForOrder" type="text">
+                        </form>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Name:
+                        <form>
+                            <input class="form-control " id="txtCusNameForOrder" type="text">
+                        </form>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Address:
+                        <form>
+                            <input class="form-control " id="txtAddressForOrder" type="text">
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <div class="col bg-secondary m-4 pb-4">
+            <section class="container">
+                <div class="row">
+                    <div class="bg-dark text-white mb-3 p-2"><h4>Item Select</h4></div>
+                    <div class="col">
+                        Item:
+                        <select class="form-select" id="cmbItemIds">
+                        </select>
+                    </div>
+                    <div class="col">
+                        Item Code:
+                        <form>
+                            <input class="form-control " id="txtItemIDForOrder" type="text">
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Item Name:
+                        <form>
+                            <input class="form-control " id="txtItemNameForOrder" type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        Item Price:
+                        <form>
+                            <input class="form-control " id="txtItemPriceForOrder" type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        QtyOnH:
+                        <form>
+                            <input class="form-control " id="txtQTYONHand" type="text">
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Order QTY:
+                        <form>
+                            <input class="form-control " id="txtOrderQty" type="text">
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary mt-4" id="btnAddToCart">Add Item</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col bg-secondary m-4 pb-4">
+            <h4 class="text-dark p-2" id="total">Total : <span>0</span></h4>
+            <h4 class="text-white p-2" id="subtotal">Sub Total :<span id="subtot">0</span></h4>
+            <section class="container">
+                <div class="row">
+                    <div class="col">
+                        Cash:
+                        <form>
+                            <input class="form-control " id="txtCash" type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        Discount:
+                        <form>
+                            <input class="form-control " id="txtDiscount" type="text">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        Balance:
+                        <form>
+                            <input class="form-control " id="txtBalance" type="text">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-outline-dark mt-4" id="btnPurchase" type="button">Purchase</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div style="height: 260px; overflow: scroll">
+        <table class="table table-dark table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Order ID</th>
+                <th scope="col">Item Code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tbody id="tblCart">
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+
+
+
+
+<script src="assets/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
