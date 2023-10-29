@@ -1,0 +1,37 @@
+/* Mobile Small */
+@media (max-width: 320px) {
+
+    body {
+        font-size: 14px;
+    }
+
+        header {
+            padding: 10px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+        nav li {
+            margin: 10px 0;
+        }
+
+        main {
+            padding: 10px;
+        }
+
+
+        img {
+            max-width: 100%;
+        }
+
+        form input {
+            width: 100%;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+

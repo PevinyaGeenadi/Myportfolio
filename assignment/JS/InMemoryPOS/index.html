@@ -6,99 +6,56 @@
     <title>InMemory POS system</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
 
+
+
 </head>
 <body>
 
-<header>
-    <section class="container-fluid col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-12" >
-        <nav class="navbar navbar-light bg-dark bg-opacity-50 row">
-            <div class="container-fluid col">
-                <a class="navbar-brand text-danger fw-bold " href="index.html">
-                    FRESHMARKET POS SYSTEM
-                </a>
-            </div>
-        </nav>
-    </section>
-    <section class="text-center  bg-success">
-        <nav class="nav justify-content-center">
-            <a aria-current="page" class="nav-link link-light" href="index.html">HOME</a>
-            <a class="nav-link link-light" href=" customers.html" id="btnCustomer"
-               onclick="OpenLoadFunction()">CUSTOMERS</a>
-            <a class="nav-link link-light" href="item.html" id="btnItem" onclick="generateItemId()">ITEMS</a>
-            <a class="nav-link link-light" href="placeOrder.html" id="btnOrder" onclick="forOrder()"> ORDER</a>
-        </nav>
-    </section>
-</header>
-<section class="">
-    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
-        <div class="carousel-indicators">
-            <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
-                    data-bs-target="#carouselExampleCaptions" type="button"></button>
-            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
-                    type="button"></button>
-            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
-                    type="button"></button>
+
+<!------------nav bar-------------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-2 position-fixed top-0 w-100" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand text-danger fw-bold " href="index.html">
+            FRESHMARKET POS SYSTEM
+        </a>
+        <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                    <a aria-current="page" class="nav-link active" href="index.html" >HOME</a>
+                </li>
+                <li class="nav-item ">
+                    <a aria-current="page" class="nav-link active" href="#order" id="btnOrder" onclick="forOrder()">ORDER</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#customer" id="btnCustomer"
+                       onclick="OpenLoadFunction()">CUSTOMER</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#item" id="btnItem" onclick="generateItemId()">ITEM</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="#details" id="btnDetails"
+                       onclick="loadingOrder()">DETAILS</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" id="currentDate">2023-10-29</a>
+                </li>
+            </ul>
         </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img alt="..." class="d-block w-100" src="assets/fru.png">
-                <div class="carousel-caption d-none d-md-block">
-
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img alt="..." class="d-block w-100" src="assets/bg2.png">
-                <div class="carousel-caption d-none d-md-block">
-
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img alt="..." class="d-block w-100" src="assets/Vegetables3.png">
-            </div>
-        </div>
-        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
-                type="button">
-            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
-                type="button">
-            <span aria-hidden="true" class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
-</section>
+</nav>
 
-
-<!--- order page -->
-<section class="container-fluid">
-    <nav class="navbar navbar-light bg-dark bg-opacity-50 row">
-        <div class="container-fluid col">
-            <a class="navbar-brand text-danger fw-bold " href="index.html">
-                FRESHMARKET POS SYSTEM
-            </a>
-        </div>
-    </nav>
-</section>
-<section class="text-center  bg-success">
-    <nav class="nav justify-content-center">
-        <a aria-current="page" class="nav-link link-light" href="index.html">HOME</a>
-        <a class="nav-link link-light" href="customers.html ">CUSTOMERS</a>
-        <a class="nav-link link-light" href="items.html">ITEMS</a>
-        <div class="p text-primary-emphasis bg-warning border border-danger rounded-2">
-            <a class="nav-link link-light" href="placeOrder.html">PLACE ORDER</a> </div>
-    </nav>
-</section>
-
-
+<!--NAV CLOSE-->
+<!-------placeOrder page------->
 <section class="p-2" id="order" style="display: block;">
     <h2>Order</h2>
     <div class="d-flex">
         <div class="col bg-secondary m-4 pb-4">
             <section class="container">
                 <div class="row">
-                    <div class="bg-dark text-white  mb-3 p-2"><h4>Invoice Details</h4></div>
+                    <div class="bg-danger-subtle text-black  mb-3 p-2"><h4>INVOICE DETAILS</h4></div>
                     <div class="col">
                         Order ID:
                         <form>
@@ -151,7 +108,7 @@
         <div class="col bg-secondary m-4 pb-4">
             <section class="container">
                 <div class="row">
-                    <div class="bg-dark text-white mb-3 p-2"><h4>Item Select</h4></div>
+                    <div class="bg-danger-subtle text-black mb-3 p-2"><h4>ITEMS SELECT</h4></div>
                     <div class="col">
                         Item:
                         <select class="form-select" id="cmbItemIds">
@@ -194,13 +151,13 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button class="btn btn-primary mt-4" id="btnAddToCart">Add Item</button>
+                        <button class="btn btn-danger mt-4" id="btnAddToCart">Add Item</button>
                     </div>
                 </div>
             </section>
         </div>
         <div class="col bg-secondary m-4 pb-4">
-            <h4 class="text-dark p-2" id="total">Total : <span>0</span></h4>
+            <h4 class="text-dark bg-danger-subtle p-2" id="total">TOTAL : <span>0</span></h4>
             <h4 class="text-white p-2" id="subtotal">Sub Total :<span id="subtot">0</span></h4>
             <section class="container">
                 <div class="row">
@@ -229,14 +186,14 @@
 
                 <div class="row">
                     <div class="col">
-                        <button class="btn btn-outline-dark mt-4" id="btnPurchase" type="button">Purchase</button>
+                        <button class="btn btn-danger mt-4" id="btnPurchase" type="button">Purchase</button>
                     </div>
                 </div>
             </section>
         </div>
     </div>
     <div style="height: 260px; overflow: scroll">
-        <table class="table table-dark table-striped">
+        <table class="table table-danger table-striped">
             <thead>
             <tr>
                 <th scope="col">Order ID</th>
@@ -252,12 +209,290 @@
         </table>
     </div>
 </section>
+<!--placeOrder CLOSE-->
+
+
+<!----------Item page -------->
+<section class="p-2" id="item" style="display: block; margin-top: 40px">
+    <div>
+
+        <!----------------title bar---------------->
+        <div class="row mt-3">
+            <div class="col-1"><img alt="Item" src="assets/cart.png"
+                                    style="width: 50px"></div>
+            <h3 class="col"><b>ITEMS</b></h3>
+
+            <form class="d-flex col-4">
+                <input aria-label="Search" class="form-control me-2 rounded-pill" id="txtSearchItem"
+                       placeholder="Search items"
+                       type="search">
+                <button class="btn btn-outline-success" id="btnSearchItem" type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="col-12 bg-danger-subtle mt-3">
+            <h1 class="text-black fs-7 text-center mt-4">ADD/ DELETE / UPDATE ITEM</h1>
+        </div>
+        <!--text field-->
+        <div class="mt-5 row">
+            <label class=" col-sm-1 col-form-label fw-bold" for="txtItemId">Id</label>
+            <div class="col-sm-5">
+                <input aria-label="default input example" class="form-control bg-light" id="txtItemId"
+                       placeholder="I001"
+                       type="text">
+                <small class="text-danger" id="lblItemId"></small>
+            </div>
+
+            <label class="col-sm-1 col-form-label fw-bold" for="txtItemName">Item name</label>
+            <div class="col-sm-5">
+                <input aria-label="default input example" class="form-control bg-light" id="txtItemName"
+                       placeholder="cereal"
+                       type="text">
+                <small class="text-black" id="lblItemName"></small>
+            </div>
+        </div>
+        <div class="mt-2 row">
+            <label class="col-sm-1 col-form-label fw-bold" for="txtItemPrice">Price</label>
+            <div class="col-sm-5">
+                <input aria-label="default input example" class="form-control bg-light" id="txtItemPrice"
+                       placeholder="1250.00"
+                       type="text">
+                <small class="text-danger" id="lblPrice"></small>
+            </div>
+
+            <label class="col-sm-1 col-form-label fw-bold" for="txtItemQty">Qty</label>
+            <div class="col-sm-5">
+                <input aria-label="default input example" class="form-control bg-light" id="txtItemQty"
+                       placeholder="150"
+                       type="text">
+                <small class="text-danger" id="lblQTY"></small>
+            </div>
+        </div>
+
+        <!--button bar-->
+
+        <div aria-label="Basic mixed styles example" class="col-8 btn-group my-4" role="group">
+            <button class="btn btn-danger btn-outline-light text-white mx-5 rounded-pill" id="btnDeleteItem" type="button">Delete</button>
+            <button class="btn btn-warning btn-outline-light text-white mx-5 rounded-pill" id="btnUpdateItem" type="button">Update</button>
+            <button class="btn btn-success btn-outline-light text-white mx-5 rounded-pill" id="btnSaveItem" type="button">Save</button>
+        </div>
+
+    </div>
+
+    <!--table-->
+
+    <div class="mt-3" style="height: 270px; overflow: scroll">
+        <table class="table table-bordered table-danger table-striped table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Item name</th>
+                <th scope="col">price</th>
+                <th scope="col">qty</th>
+            </tr>
+            </thead>
+            <tbody id="tblItem">
+            </tbody>
+        </table>
+    </div>
+
+</section>
+<!--item CLOSE-->
+
+
+<!------customer page-------->
+<section class="p-2" id="customer" style="display: block; margin-top: 40px">
+    <div>
+
+        <!----------------title bar---------------->
+        <div class="row mt-3" style="margin-top: 20px">
+            <div class="col-1"><img alt="customer" src="assets/cus.png"
+                                    style="width: 50px"></div>
+            <h3 class="col">Customers</h3>
+
+            <form class="d-flex col-4">
+                <input aria-label="Search" class="form-control me-2 rounded-pill" id="txtSearchCusID"
+                       placeholder="Search Customers"
+                       type="search">
+                <button class="btn btn-outline-success" id="btnSearchCustomer" type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="col-12 bg-dark mt-3">
+            <h1 class="text-light fs-7 text-center mt-4">ADD/ DELETE / UPDATE CUSTOMER</h1>
+        </div>
+
+        <!--text field-->
+
+        <div class="mt-5 row">
+            <label class=" col-sm-1 col-form-label fw-bold" for="txtCId">Id</label>
+            <div class="col-sm-5">
+                <input aria-label="default input example" class="form-control bg-light" id="txtCId"
+                       placeholder="C001"
+                       type="text">
+                <small class="text-danger" id="lblcusid"></small>
+            </div>
+
+            <label class="col-sm-1 col-form-label fw-bold" for="txtCName">Name</label>
+            <div class="col-sm-5">
+                <input aria-label="default input example" class="form-control bg-light" id="txtCName"
+                       placeholder="PEVINYA GEENADI "
+                       type="text">
+                <small class="text-danger" id="lblcusname"></small>
+            </div>
+        </div>
+
+        <div class="mt-2 row">
+            <label class="col-sm-1 col-form-label fw-bold" for="txtAddress">Address</label>
+            <div class="col-sm-5">
+                <input aria-label="default input example" class="form-control bg-light" id="txtAddress"
+                       placeholder="Galle"
+                       type="text">
+                <small class="text-danger" id="lblcusaddress"></small>
+            </div>
+
+            <label class="col-sm-1 col-form-label fw-bold" for="txtSalary">Salary</label>
+            <div class="col-sm-5">
+                <input aria-label="default input example" class="form-control bg-light" id="txtSalary"
+                       placeholder="45000"
+                       type="text">
+                <small class="text-danger" id="lblcussalary"></small>
+            </div>
+        </div>
+
+        <!--button bar-->
+
+        <div aria-label="Basic mixed styles example" class="col-8 btn-group my-4" role="group">
+            <button class="btn btn-danger mx-5 rounded-pill" id="btnDeleteCustomer" type="button">Delete</button>
+            <button class="btn btn-warning mx-5 rounded-pill" id="btnUpdateCustomer" type="button">Update</button>
+            <button class="btn btn-success mx-5 rounded-pill" id="btnSaveCustomer" type="button">Save</button>
+        </div>
+
+    </div>
+
+    <!--------------------table----------------------->
+
+    <div class="mt-3" style="height: 270px; overflow: scroll">
+        <table class="table table-bordered table-dark table-striped table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Customer name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Salary</th>
+            </tr>
+            </thead>
+            <tbody id="tblCustomer">
+            </tbody>
+        </table>
+    </div>
+</section>
+<!--customer CLOSE-->
+
+<!------details page------->
+<section class="mt-5" id="details" style="height: 91vh; display: block;">
+
+    <section class="container-fluid order-area">
+        <div class="row">
+            <div class="col-11 mx-5">
+                <br><br>
+                <h1 class="text-center">Orders</h1>
+                <br><br>
+                <div style="overflow: scroll; height: 200px">
+                    <table class="table table-bordered table-dark table-striped table-hover" id="order-Tabele">
+                        <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer Name</th>
+                            <th>Total</th>
+                            <th>Date</th>
+                        </tr>
+                        </thead>
+                        <tbody id="orderTable">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-11 mx-5">
+            <br><br>
+            <h1 class="text-center">Orders Details</h1>
+            <br><br>
+            <div style="overflow: scroll; height: 200px">
+                <table class="table table-bordered table-dark table-striped table-hover" id="orderDetails-Tabele">
+                    <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Item Code</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody id="orderDetailsTable">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</section>
+<!--details CLOSE-->
 
 
 
 
 
+
+
+
+
+
+
+<script src="../KNIGHT/assets/bootstrap/js/jquery-3.7.1.min.js"></script>
+<script src="controller/customerController.js"></script>
+<script src="controller/indexController.js"></script>
+<script src="controller/itemController.js"></script>
+<script src="controller/OrderController.js"></script>
+<script src="controller/PlaceOrderController.js"></script>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+<script src="db/dataBase.js"></script>
+<script src="model/CartDTO.js"></script>
+<script src="model/CustomerDTO.js"></script>
+<script src="model/ItemDTO.js"></script>
+<script src="model/OrderDetailsDTO.js"></script>
+<script src="model/OrderDTO.js"></script>
 
 <script src="assets/bootstrap/js/bootstrap.js"></script>
+<script>
+    // JavaScript code for styling goes here
+    // Change font color, font style, and background color using JavaScript
+
+    // Change font color and font style for specific elements
+    document.querySelectorAll('.btn, h3, h1, label, small').forEach(element => {
+        element.style.color = '#F08080'; // Change font color to green
+        element.style.fontFamily = 'Verdana, sans-serif'; // Change font style
+    });
+
+    // Change background color for specific elements
+    document.querySelectorAll('.bg-dark').forEach(element => {
+        element.style.backgroundColor = '#577'; // Change background color
+    });
+
+    // Change background color for the section element
+    document.getElementById('item').style.backgroundColor = '#07071F '; // Change background color
+    document.getElementById('order').style.backgroundColor = '#07071F   '; // Change background color
+    document.getElementById('customer').style.backgroundColor = '#07071F '; // Change background color
+    document.getElementById('details').style.backgroundColor = '#07071F   '; // Change background color
+
+    // Change button colors
+    document.querySelectorAll('.btn').forEach(button => {
+        button.style.backgroundColor = '#FF5733'; // Change the background color
+        button.style.borderColor = '#FF5733'; // Change the border color
+        button.style.color = '#FFFFFF'; // Change the text color
+    });
+
+
+</script>
 </body>
 </html>

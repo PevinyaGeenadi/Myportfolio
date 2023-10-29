@@ -24,8 +24,8 @@ body > main > section:nth-child(6) > h1 {
 
 .assignments-container{
     position: relative;
-    width: 45vh;
-    height: 25vh;
+    width: 35vh;
+    height: 29vh;
     border-radius: 15px;
     text-align: center;
     opacity: 95%;
