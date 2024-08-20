@@ -1,156 +1,85 @@
-@media all and (min-width: 1440px) {
+#contact {
+    background-color: #222;
+    color: #eee;
+    padding: 50px 20px;
+    text-align: center;
+}
 
-     footer {
-        background-color: #221E1E;
-        width: 100vw;
-        height: 100vh;
-         z-index: 0;
-         position: relative;
-         display: flex;
-    }
+#contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
 
-     footer > h1 {
-        position: absolute;
-        left: 40%;
-        top: 0;
-        font-size: 2.3rem;
-        color: white;
-    }
+#contact address ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
 
+#contact address ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
 
-    footer > h3 {
-        color: #B8B8B8;
-    }
+#contact address ul li i {
+    margin-right: 10px;
+    color: papayawhip;
+}
 
-    footer > i {
-        font-size: 1.5em;
-    }
+.social-links {
+    margin-bottom: 30px;
+}
 
+.social-links a {
+    margin: 0 10px;
+    color: #eee;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
 
-    footer > aside li {
-        color: #C4C4C4;
-    }
+.social-links a:hover {
+    color: #ff6347;
+}
 
-    footer > aside li:hover {
-        color: white;
-    }
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
 
-    footer > address {
-        position: absolute;
-        top: 20vh;
-        left: 5vw;
-        width: max-content;
-        height: max-content;
-    }
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
 
-    footer > address > ul:first-child {
-        color: #C4C4C4;
-        height: 36vh;
-    }
+#contact-form label {
+    font-size: 1.2em;
+    color: #ff6347;
+}
 
-    footer > address > ul:nth-child(2) > li, footer a {
-        color: #C4C4C4;
-        font-style: normal;
-        font-weight: bolder;
-        font-size: 0.9em;
-    }
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #eee;
+    font-size: 1em;
+}
 
-    footer a:hover {
-        text-decoration: underline;
-    }
+#contact-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-    footer ul {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-
-    footer > address > ul:nth-child(2) {
-        height: 33vh;
-        top: 0;
-        left: 10vw;
-    }
-
-    footer > aside:nth-child(3) {
-        position: absolute;
-        top: 67vh;
-        left: 18vw;
-    }
-
-    footer > aside:nth-child(3) > ul {
-
-        flex-direction: row;
-        width: 30vh;
-    }
-
-    footer > small {
-        color: #c4c4c4;
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        bottom: 6vh;
-    }
-
-    footer label {
-        font-weight: bolder;
-    }
-
-    footer > section {
-
-        background-color: #383838;
-        position: absolute;
-        transform: rotate(
-                90deg
-        );
-        width: 65vh;
-        height: 0.2vh;
-        top: 42vh;
-        left: 33vw;
-    }
-
-
-    footer > aside:nth-child(4) > form {
-        position: absolute;
-        top: 12vh;
-        left: 57vw;
-        font-size: 1.5em;
-        color: #c4c4c4;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        height: 55vh;
-    }
-
-    footer input {
-        border-radius: 10px;
-        width: 35vw;
-    }
-
-    footer form > button {
-        background-color: #8C1717;
-        color: white;
-        border: 2px solid #8C1717;
-        border-radius: 10px;
-        position: absolute;
-        bottom: -5vh;
-        right: 0;
-        height: 5vh;
-        width: 12vh;
-        font-weight: bolder;
-        font-size: 1.1em;
-
-    }
-
-    footer form > button:hover {
-
-        background-color: silver;
-
-    }
-
-    footer input:nth-child(8) {
-        height: 12vh;
-    }
-
+#contact-form button:hover {
+    background-color: #ff4500;
 }

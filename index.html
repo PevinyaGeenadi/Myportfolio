@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/css/all.css">
     <link rel="stylesheet" href="assets/css/assignment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
 </head>
 <body>
@@ -216,45 +218,40 @@
 
 
 <footer id="contact">
-    <h1>Contact</h1>
+    <h1>Contact Me</h1>
     <address>
         <ul>
-            <li><i class="fa-solid fa-location-dot"></i>No:361/18,Regal road,<br>Galle,<br>Srilanka.</li>
-            <li><i class="fa-solid fa-envelope"></i><a href="mailto:vinugeena81@gmail.com">vinugeena81@gmail.com</a></li>
-            <li><i class="fa-solid fa-phone"></i><a href="tel:+94779296898">+94779296898</a></li>
+            <li><i class="fa-solid fa-location-dot"></i> No:361/18, Regal Road,<br>Galle, Sri Lanka.</li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:haputhanthri200@gmail.com">haputhanthri200@gmail.com</a></li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+94779296898">+94 779 296 898</a></li>
         </ul>
-
-        <section class="line"></section>
     </address>
 
-    <aside>
-        <ul>
-            <li><a href="https://www.linkedin.com" target="_blank"></a><i class="fab fa-linkedin"></i></li>
-            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href=" https://github.com/" target="_blank"></a><i class="fab fa-github-square"></i></li>
-            <li><a href="https://www.facebook.com/" target="_blank"></a><i class="fab fa-facebook-square"></i></li>
-            <li><a href="https://www.instagram.com/" target="_blank"></a><i class="fab fa-instagram-square"></i></li>
-        </ul>
-    </aside>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/pevinya-geenadi-26524627b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/PevinyaGeenadi" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.upwork.com/freelancers/~0104229f2ffc28b355" target="_blank"><i class="fas fa-briefcase"></i></a>
+    </div>
 
-    <aside>
-        <form action="https://mail.google.com/">
-            <label>Name</label>
-            <input id="name" type="text"><br>
+    <form id="contact-form" action="https://mail.google.com/" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
             <label for="email">Email</label>
-            <input id="email" type="text"><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
             <label for="subject">Subject</label>
-            <input id="subject" type="text"><br>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
             <label for="message">Message</label>
-            <input id="message" type="text" ><br>
-
-            <button>send</button>
-
-        </form>
-    </aside>
-
-
-    <section></section>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
 </footer>
 </body>
 </html>
