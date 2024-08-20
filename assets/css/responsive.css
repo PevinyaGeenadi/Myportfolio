@@ -1,37 +1,31 @@
-/* Mobile Small */
-@media (max-width: 320px) {
-
-    body {
-        font-size: 14px;
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
     }
 
-        header {
-            padding: 10px;
-        }
-
-        nav ul {
-            flex-direction: column;
-            text-align: center;
-        }
-        nav li {
-            margin: 10px 0;
-        }
-
-        main {
-            padding: 10px;
-        }
-
-
-        img {
-            max-width: 100%;
-        }
-
-        form input {
-            width: 100%;
-        }
-
-        p {
-            margin-bottom: 10px;
-        }
+    nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
     }
 
+    .intro h2 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-info h3 {
+        font-size: 1.25rem;
+    }
+
+    .project-info p {
+        font-size: 0.9rem;
+    }
+}
+    

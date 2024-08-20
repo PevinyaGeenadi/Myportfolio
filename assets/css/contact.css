@@ -54,7 +54,7 @@
 
 #contact-form label {
     font-size: 1.2em;
-    color: #ff6347;
+    color: firebrick;
 }
 
 #contact-form input,
@@ -73,7 +73,7 @@
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #ff6347;
+    background-color: #8C1717;
     color: #fff;
     font-size: 1.2em;
     cursor: pointer;
