@@ -2,7 +2,9 @@
 # Myportfolio
 This is my website 
 =======
-my portfolio link - https://pevinya.netlify.app/
+## my portfolio link - https://pevinya.netlify.app/
+
+<br>
 <div id="top"></div>
 
 <!--
@@ -29,7 +31,7 @@ my portfolio link - https://pevinya.netlify.app/
 
 ## About Project
 
-<img src="assets/home.png" alt="Logo" >
+<img src="assets/port.png" alt="Logo" >
 
 <b>Hello, I'm Pevinya Geenadi! This project is my personal portfolio website where I showcase my projects, skills, and experiences in the world of web development.</b>
 
